@@ -19,6 +19,16 @@ Este laboratório prático guiará você na sua primeira experiência com **Infr
 3. No repositório, clique no botão verde **Code** -> selecione a aba **Codespaces** -> clique em **Create codespace on main**.
 4. Aguarde alguns instantes até que a interface do VS Code seja renderizada no seu navegador.
 
+> [!TIP]
+> **Troubleshooting (Caso o Terraform não esteja instalado):**
+> Se ao rodar os comandos nos passos seguintes você receber o erro `bash: terraform: command not found`, execute o bloco de comandos abaixo no terminal do seu Codespaces para instalá-lo em segundos:
+> ```bash
+> wget https://releases.hashicorp.com/terraform/1.9.0/terraform_1.9.0_linux_amd64.zip
+> unzip terraform_1.9.0_linux_amd64.zip
+> sudo mv terraform /usr/local/bin/
+> rm terraform_1.9.0_linux_amd64.zip
+> ```
+
 ### Passo 2: Criar o Arquivo de Configuração do Terraform
 1. No gerenciador de arquivos lateral esquerdo, clique com o botão direito e selecione **New File** (Novo Arquivo).
 2. Dê o nome de **`main.tf`** para este arquivo.
