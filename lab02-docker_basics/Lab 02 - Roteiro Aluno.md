@@ -17,8 +17,9 @@ Este laboratório prático guiará você no provisionamento de um servidor web r
 Certifique-se de que você está com o seu ambiente do Codespaces aberto no navegador e que limpou os recursos do Lab 01 (rodando `terraform destroy` no diretório anterior, se necessário).
 
 ### Passo 2: Criar o Arquivo de Configuração do Terraform
-1. No seu Codespaces, crie um novo arquivo chamado **`main.tf`** (se estiver usando uma pasta limpa) ou substitua o conteúdo do arquivo anterior.
-2. Cole o seguinte código HCL de configuração do Terraform:
+1. No seu Codespaces, expanda a pasta **`labs`** e clique com o botão direito sobre a subpasta **`lab02-docker_basics`**, selecionando **New File** (Novo Arquivo).
+2. Crie um arquivo chamado **`main.tf`** dentro desta subpasta.
+3. Cole o seguinte código HCL de configuração do Terraform:
 
 ```hcl
 # 1. Definição do Provider do Docker
@@ -55,7 +56,12 @@ resource "docker_container" "nginx_web" {
 ### Passo 3: Inicializar e Provisionar a Infraestrutura
 No terminal integrado do Codespaces, execute os comandos do ciclo de vida:
 
-1.  **Inicialização:**
+1.  **Navegação e Inicialização:**
+    Primeiro, navegue para a pasta deste laboratório no terminal:
+    ```bash
+    cd labs/lab02-docker_basics
+    ```
+    Depois, inicialize o provider do Docker:
     ```bash
     terraform init
     ```
@@ -89,7 +95,7 @@ No terminal integrado do Codespaces, execute os comandos do ciclo de vida:
 ---
 
 ## 🧹 Limpeza do Ambiente
-Para desprovisionar o container e limpar a imagem criada, execute no terminal do Codespaces:
+Para desprovisionar o container e limpar a imagem criada, execute no terminal do Codespaces (garanta que está na pasta `labs/lab02-docker_basics`):
 ```bash
 terraform destroy
 ```

@@ -30,8 +30,8 @@ Este laboratório prático guiará você na sua primeira experiência com **Infr
 > ```
 
 ### Passo 2: Criar o Arquivo de Configuração do Terraform
-1. No gerenciador de arquivos lateral esquerdo, clique com o botão direito e selecione **New File** (Novo Arquivo).
-2. Dê o nome de **`main.tf`** para este arquivo.
+1. No gerenciador de arquivos lateral esquerdo, expanda a pasta **`labs`** e clique com o botão direito sobre a subpasta **`lab01-hello_world`**, selecionando **New File** (Novo Arquivo).
+2. Dê o nome de **`main.tf`** para este arquivo (ele deve residir dentro da pasta do laboratório).
 3. Copie e cole o seguinte código HCL dentro do arquivo:
 
 ```hcl
@@ -64,7 +64,12 @@ resource "local_file" "hello_fiap" {
 ### Passo 3: Executar os Comandos do Terraform
 Abra o terminal integrado do VS Code (atalho `Ctrl + '` ou pelo menu principal Terminal -> New Terminal) e execute os seguintes comandos sequencialmente:
 
-1.  **Inicialização do Diretório:**
+1.  **Navegação e Inicialização do Diretório:**
+    No terminal, primeiro navegue para a pasta do laboratório:
+    ```bash
+    cd labs/lab01-hello_world
+    ```
+    Em seguida, inicialize o Terraform para baixar os providers:
     ```bash
     terraform init
     ```
@@ -93,7 +98,7 @@ Abra o terminal integrado do VS Code (atalho `Ctrl + '` ou pelo menu principal T
 ---
 
 ## 🧹 Limpeza do Ambiente
-Para desprovisionar os recursos criados e encerrar o ciclo, execute no terminal:
+Para desprovisionar os recursos criados e encerrar o ciclo, execute no terminal (certifique-se de que ainda está na pasta `labs/lab01-hello_world`):
 ```bash
 terraform destroy
 ```
