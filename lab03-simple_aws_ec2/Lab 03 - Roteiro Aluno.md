@@ -64,7 +64,7 @@ Se você NÃO possui credenciais AWS ativas no momento:
 ---
 
 ### Passo 2: Configurar o Provedor no `main.tf`
-1. No gerenciador de arquivos esquerdo do Codespaces, expanda as pastas `labs` -> `lab03-simple_aws_ec2` e abra o arquivo `main.tf`.
+1. No gerenciador de arquivos esquerdo do Codespaces, expanda a pasta `lab03-simple_aws_ec2` e abra o arquivo `main.tf`.
 2. Configure o bloco do `provider "aws"` de acordo com a opção escolhida no Passo 1:
 
 - **Se escolheu a Opção A (AWS Real):** Mantenha a configuração padrão do arquivo:
@@ -99,7 +99,7 @@ No terminal do seu Codespaces, execute os comandos do ciclo de vida:
 
 1. **Navegar para a pasta do Lab 03:**
    ```bash
-   cd labs/lab03-simple_aws_ec2
+   cd lab03-simple_aws_ec2
    ```
 
 2. **Inicializar o Terraform:**
