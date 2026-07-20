@@ -70,7 +70,7 @@ Abra o terminal do seu Codespaces e execute os comandos do ciclo de vida:
 
 1. **Navegar para a pasta do Lab 05:**
    ```bash
-   cd labs/lab05-refactoring
+   cd lab05-refactoring
    ```
 2. **Inicializar o Terraform:**
    ```bash
