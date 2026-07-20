@@ -25,7 +25,7 @@ Como o bucket S3 e a tabela do DynamoDB que armazenarão o estado remoto ainda n
 
 1. **Renomeie o arquivo `backend.tf`** para `backend.tf.disabled` (para que o Terraform ignore a configuração de backend remoto temporariamente):
    ```bash
-   cd labs/lab04-terraform_state
+   cd lab04-terraform_state
    mv backend.tf backend.tf.disabled
    ```
 2. **Inicialize o diretório de trabalho** (isso baixará os provedores usando estado local):
