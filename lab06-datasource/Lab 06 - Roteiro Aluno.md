@@ -62,7 +62,7 @@ No terminal do seu Codespaces, execute as etapas do ciclo de vida:
 
 1. **Navegar para a pasta do Lab 06:**
    ```bash
-   cd labs/lab06-datasource
+   cd lab06-datasource
    ```
 2. **Inicializar o Terraform:**
    ```bash
